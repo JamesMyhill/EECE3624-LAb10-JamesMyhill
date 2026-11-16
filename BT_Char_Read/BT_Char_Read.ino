@@ -36,9 +36,9 @@ void setup() {
 
 void loop() {
   digitalWrite(led,HIGH);
-  delay(1000);
+  delay(10);
   digitalWrite(led,LOW);
-  delay(1000);
+  delay(10);
   if (bluetooth.available()) {  
     incomingByte = (unsigned char) bluetooth.read();
     Serial.write(incomingByte);
